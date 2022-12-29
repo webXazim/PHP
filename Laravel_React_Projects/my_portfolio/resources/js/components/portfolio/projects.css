@@ -1,0 +1,281 @@
+.projects {
+  background-color: var(--bluex);
+  background-image: radial-gradient(circle,
+      var(--bluex),
+      var(--bluex),
+      var(--dblue));
+  padding: 5% 0px 10% 0px;
+}
+
+
+.project-section-header h1 {
+  color: #ff5000;
+}
+
+.project-section-header h6 {
+  color: lightgray;
+  max-width: 60ch;
+  margin: auto;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
+
+.project-card {
+  border-radius: 5px;
+  color: lightgray;
+  text-align: center;
+  margin-bottom: auto;
+  box-shadow: .1px .1px 8px .01px rgba(77, 77, 77, .6);
+}
+
+.project-card:hover {
+  box-shadow: .1px .1px 8px .01px rgba(77, 77, 77, 1);
+  transition: all .5s;
+}
+
+.project-card h2 {
+  font-size: 30px;
+}
+
+.project-card-btn {
+  justify-content: space-around;
+}
+
+.preview-btn-lg a {
+  font-family: cursive;
+  padding: 20px;
+}
+
+.project-card-btn h3 {
+  font-size: 17px;
+  text-align: center;
+  align-items: flex-end;
+}
+
+.project-card-btn button {
+  color: aqua;
+  padding: 8px 8px 2px 8px;
+  border-radius: 5px;
+  border: 2px solid #202020;
+  margin: auto;
+  transition: all .2s;
+}
+
+.project-card-btn button:hover {
+  transition: all .2s;
+  color: #ff5000;
+  box-shadow: .1px .1px 8px .01px rgba(77, 77, 77, 1);
+}
+
+.each-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.card-text {
+  text-align: left;
+}
+
+.card-text h6 {
+  font-size: 18px;
+  color: gray;
+}
+
+@media screen and (min-width: 1400px) {
+  .each-card {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'a b c d'
+      'a e f n';
+  }
+
+  .item1 {
+    grid-area: a;
+  }
+
+  .item2 {
+    grid-area: b;
+  }
+
+  .item3 {
+    grid-area: c;
+  }
+
+  .item4 {
+    grid-area: d;
+  }
+
+  .item5 {
+    grid-area: e;
+  }
+
+  .item6 {
+    grid-area: f;
+  }
+
+
+  .card-data {
+    padding: 30px 5px 30px 5px;
+    transition: all .5s;
+    opacity: 0;
+  }
+
+  .card-data:hover {
+    background-color: rgba(10, 10, 10, .8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    padding: 30px 5px 30px 5px;
+    transition: all .5s;
+    opacity: 1;
+  }
+
+
+  .project-card-btn button {
+    display: none;
+  }
+
+
+  /* preview icon */
+  #a>#b {
+    color: transparent;
+    font-size: 22px;
+    transition-duration: 500ms;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+  }
+
+  #a>#b i {
+    position: relative;
+    top: 50%;
+  }
+
+  #a:hover>#b {
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 768px) {
+  .each-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project-card-btn button {
+    display: none;
+  }
+
+  .card-data {
+    padding: 30px 5px 30px 5px;
+    transition: all .5s;
+    opacity: 0;
+  }
+
+  .card-data:hover {
+    background-color: rgba(10, 10, 10, .8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    padding: 30px 5px 30px 5px;
+    transition: all .5s;
+    opacity: 1;
+  }
+
+
+  .project-card-btn button {
+    display: none;
+  }
+
+
+  /* preview icon */
+  #a>#b {
+    color: transparent;
+    font-size: 0px;
+    transition-duration: 500ms;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+  }
+
+  #a>#b i {
+    position: relative;
+    top: 50%;
+  }
+
+  #a:hover>#b {
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.5);
+    font-size: 25px;
+    visibility: visible;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .projects {
+    padding-bottom: 3em;
+    padding-top: 3em;
+  }
+
+  .project-card {
+    margin-bottom: 0;
+  }
+
+  #b {
+    display: none;
+  }
+
+  .card-text {
+    height: auto;
+  }
+
+  .card-data {
+    background-color: rgba(10, 10, 10, .8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 30px 5% 20px 5%;
+    border-radius: 5px;
+  }
+}
+
+#b a {
+  color: white;
+}
+
+#b i {
+  height: 50%;
+  width: 100%;
+}
+
+
+
+
+/* New Haikei style */
+.spacer {
+  aspect-ratio: 960/570;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.blob {
+  background-image: url('peaks.svg');
+}
+
+.wave {
+  background-image: url('wave.svg');
+}

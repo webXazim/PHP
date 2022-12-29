@@ -1,0 +1,532 @@
+/*********************************
+blog post style
+*****************************/
+.posts-excerpt {
+    max-width: 70ch !important;
+    font-size: large;
+    margin-top: 20px;
+}
+
+
+
+p {
+    line-height: 1.6;
+}
+
+.author h6,
+.author p {
+    line-height: .5;
+    margin-top: 7px;
+}
+
+/* 
+article + article {
+    margin-top: 3rem;
+    border-top: 1px solid #c5c5c5;
+} */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.flow::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.flow {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+#list-example {
+    font-size: 14px;
+
+}
+
+.blogpage {
+    color: #000015;
+}
+
+.list-group-item {
+    background-color: transparent;
+    color: gray;
+}
+
+a.list-group-item-action.active {
+    background-color: #000025;
+    color: aliceblue;
+    border-color: rgba(0, 0, 0, 0.2);
+
+}
+
+a.list-group-item-action:hover {
+    background-color: #000025;
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+#x h2,
+h1 {
+    color: #000015;
+    font-weight: 10000px;
+
+}
+
+
+#x h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* for blog head */
+.bloghead {
+    background-color: #000015;
+    max-width: 100%;
+    padding: 5em;
+    color: white;
+}
+
+.lefthead h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: white;
+    margin-top: 20px;
+}
+
+.righthead {
+    margin-top: 1rem;
+    color: #000015;
+    padding: 20px;
+    border-left: 3px solid #ff5000;
+}
+
+.righthead h5 {
+    color: white;
+}
+
+#alltags button {
+    background-color: white;
+    padding: .5rem;
+    border-radius: 5rem;
+}
+
+.headbottom {
+    margin-top: 5%;
+}
+
+
+.share:hover {
+    color: var(--dorange);
+    transition: all .3s;
+}
+
+/***********************************
+        for Responsive content
+        *********************************/
+
+
+
+@media screen and (min-width: 1135px) {
+    .contentholder {
+        display: block;
+    }
+
+
+    .bloghead {
+        background-color: #000015;
+        max-width: 100%;
+        padding: 5em;
+        color: white;
+
+    }
+
+    #time,
+    .comments h5,
+    .share h4 {
+        padding-left: 15px;
+        padding: 8px;
+        margin: 5px;
+        font-size: 20px !important;
+        margin-left: px;
+        border-left: 3px solid var(--dorange);
+    }
+
+    .share h4 {
+        padding: 10px;
+    }
+
+    .headbottom img {
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+
+    .authorimg img {
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+    }
+
+    #x .vid iframe {
+        height: 20em;
+        width: 100%;
+        border-radius: .5em;
+
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 1135px) and (min-width: 720px) {
+    .contentholder {
+        display: none;
+    }
+
+    .posts-excerpt h6 {
+        margin-top: 10px;
+    }
+
+    .title {
+        margin: 0;
+        padding: 0;
+    }
+
+    .lefthead h1 {
+        font-size: 2rem;
+        font-weight: 300;
+        color: white;
+    }
+
+    .bloghead {
+        background-color: #000015;
+        max-width: 100%;
+        padding: 0%;
+        color: white;
+        padding-top: 5em;
+
+    }
+
+    #time,
+    .comments h5,
+    .share h4 {
+        padding: 8px;
+        margin: 5px;
+        font-size: 19px !important;
+        margin-left: 10px;
+        border-left: 3px solid var(--dorange);
+    }
+
+    #category {}
+
+    .share h4 {
+        padding: px;
+    }
+
+    .headbottom img {
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+
+    .authorimg img {
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+
+    }
+
+    .authorimg {
+        font-size: 6px !important;
+    }
+
+    .righthead {
+        margin-left: 1rem;
+        color: #000015;
+    }
+
+    #x .vid iframe {
+        height: 22em;
+        width: 100% !important;
+        border-radius: .5em;
+
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    #bq blockquote::before {
+
+        display: flex;
+    }
+
+    #bq blockquote {
+        font-size: 1em;
+        min-width: 100%;
+        margin: 0px;
+        font-family: Open Sans;
+        font-style: italic;
+        color: #555555;
+        padding: 7px !important;
+        padding-top: 3rem !important;
+        border-left: 8px solid #000015;
+        line-height: 1.5;
+        position: relative;
+        background: #ededed;
+    }
+
+    .contentholder {
+        display: none;
+    }
+
+    .lefthead h1 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: white;
+
+    }
+
+    .bloghead {
+        background-color: #000015;
+        max-width: 100%;
+        padding: 0%;
+        color: white;
+        padding-top: 5em;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    #time,
+    .comments h5,
+    .share h4 {
+        padding: 2px;
+        margin: 3px;
+        font-size: 15px !important;
+        border-left: 3px solid var(--dorange);
+    }
+
+    .share h4 {
+        padding: 3.5px;
+    }
+
+    .headbottom img {
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        margin-top: 15px;
+        margin-right: 5px;
+    }
+
+    .authorimg img {
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+    }
+
+    .righthead {
+        margin-bottom: 1rem;
+        color: #000015;
+        display: none;
+    }
+
+    #x .vid iframe {
+        height: 21em;
+        width: 100%;
+        border-radius: .5em;
+
+    }
+
+
+
+}
+
+@media screen and (max-width: 630px) {
+    #x .vid iframe {
+        height: 16em;
+        width: 100%;
+        border-radius: .5em;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #x .vid iframe {
+        height: 13em;
+        width: 100%;
+        border-radius: .5em;
+
+    }
+}
+
+/**************************************************************
+Responsive stylesheet End
+***************************************************************/
+
+.comment {
+    box-shadow: 1px 1px 5px .5px;
+}
+
+#x img {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.bloghomebg {
+    background-color: #000015;
+}
+
+/* table styleing */
+#x table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+
+
+#x #customers td,
+#x #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#x #customers tr:nth-child(even) {
+    background-color: #d1cccc;
+    color: #000015;
+}
+
+#x #customers tr:nth-child(odd) {
+    background-color: #a5a0a0;
+}
+
+#x #customers tr:hover {
+    background-color: rgb(119, 113, 113);
+}
+
+#x #customers td {
+    color: #000015;
+}
+
+#x #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #000015;
+    color: white;
+}
+
+/* list styleing */
+#defaultlist li {
+    list-style: number;
+
+}
+
+#x li {
+    list-style: circle;
+
+}
+
+#bq {
+    min-width: 100%;
+}
+
+#bq blockquote {
+    font-size: 1.1em;
+    min-width: 100%;
+    margin: 50px auto;
+    font-family: Open Sans;
+    font-style: italic;
+    color: #555555;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid #000015;
+    line-height: 1.6;
+    position: relative;
+    background: #ededed;
+}
+
+#bq blockquote::before {
+    font-family: Arial;
+    content: "\201C";
+    color: #000015;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+#bq blockquote::after {
+    content: "";
+}
+
+#bq blockquote span {
+    display: block;
+    color: #333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.filedownloadbtn a {
+    background-color: #000015;
+    margin: 1em;
+    padding: 1em;
+    text-decoration: none;
+    color: aqua;
+}
+
+/* style for gist  */
+.highlight {
+    background-color: black !important;
+}
+
+
+.gist-data,
+.gist-file {
+    background-color: black !important;
+}
+
+.gist-meta {
+    display: none;
+}
+
+
+
+#x h2::before {
+    content: "> ";
+}
+
+.addbtn p {
+    background-color: white;
+    margin: 6px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+figure {
+
+    padding: 4px;
+    margin-bottom: 11em;
+    padding-bottom: 2em;
+}
+
+figcaption {
+    color: #000015;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}

@@ -1,0 +1,126 @@
+.pre-built .card-element,
+.pre-built,
+.pre-built .card {
+    background-color: var(--bluex);
+    background-image: radial-gradient(circle,
+            var(--bluex),
+            var(--bluex),
+            var(--dblue));
+    color: var(--text);
+}
+
+.card-element {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-left: 4px solid var(--dorange);
+    transition-duration: .5s;
+    z-index: -1;
+}
+
+.card-element:hover {
+    box-shadow: .1px .1px 8px .01px rgba(77, 77, 77, 1);
+    transition-duration: .5s;
+    transform: scale(1.03);
+}
+
+
+
+.card-element img {
+    height: 200px;
+    margin-left: auto;
+    padding: 5px;
+    border-radius: 5px;
+    transition-duration: .5s;
+    position: relative;
+}
+
+.card-element img:hover {
+    z-index: 43;
+    transition-duration: .5s;
+    height: 300px;
+    transform: scale(1.1);
+}
+
+.card-element div {
+    margin: auto 0 auto 0;
+    padding-left: 2vw;
+}
+
+.card-element div p {
+    max-width: 70ch;
+}
+
+.card-element .btn button {
+    padding: 10px;
+    font-size: 32px;
+    transition-duration: .5s;
+}
+
+.card-element .btn {
+    margin: auto;
+
+}
+
+.card-element .btn button:hover {
+    color: var(--dorange);
+    transition-duration: .5s;
+}
+
+/*
+styleing popup window 
+ */
+.popup {
+    position: fixed;
+    display: none;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+
+.readMoreContent {
+    position: absolute;
+    top: 11%;
+    left: 0;
+    right: 0;
+    height: 83%;
+    width: 65%;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    margin: auto;
+    box-shadow: .1px .1px 8px .01px rgba(77, 77, 77, 1);
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    border-radius: 5px;
+}
+
+.project-details {
+    height: 600px;
+}
+
+section.readMoreContent::-webkit-scrollbar {
+    width: 0px;
+}
+
+.closingHint {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    color: var(--dorange);
+}
+
+.subNav {
+    position: sticky;
+    height: 30px;
+    width: 100%;
+    background-color: gray;
+}
+
+.subNav ul {
+    display: flex;
+}

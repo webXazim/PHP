@@ -1,0 +1,106 @@
+.testimonials {
+  background-color: var(--bluex);
+  /* For browsers that do not support gradients */
+  background-image: radial-gradient(circle,
+      var(--bluex),
+      var(--bluex),
+      var(--dblue)) !important;
+  padding: 5% 0px 5% 0px;
+  margin-top: 5px;
+  color: lightgray;
+}
+
+
+.testimonials h1 {
+  color: #ff5000;
+}
+
+.margin {
+  margin: 10px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+/* demo setup */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+blockquote {
+  margin-inline: auto
+}
+
+/* blockquote card colors */
+blockquote.q-card-color-1 {
+  --accent-color: rgb(32 32 54);
+  --bg-color: rgb(30 145 254);
+  --dot-color: rgb(255 255 255 / .35);
+  --text-color: rgb(243 243 243);
+  --text-color-author: rgb(243 243 243);
+}
+
+blockquote.q-card-color-2 {
+  --accent-color: rgb(243 243 243);
+  --bg-color: rgb(33 29 30);
+  --dot-color: rgb(255 255 255 / .125);
+  --text-color: rgb(243 243 243);
+  --text-color-author: rgb(33 29 30);
+}
+
+blockquote.q-card-color-3 {
+  --accent-color: rgb(30 145 254);
+  --bg-color: rgb(32 32 54);
+  --dot-color: rgb(255 255 255 / .125);
+  --text-color: rgb(243 243 243);
+  --text-color-author: rgb(243 243 243);
+}
+
+/* blockquote card setup*/
+blockquote.q-card {
+  --padding: 1rem;
+  padding: var(--padding);
+  color: var(--text-color, black);
+  font-weight: 600;
+  display: grid;
+  gap: 1rem;
+  background-image: radial-gradient(circle, var(--dot-color, rgb(0 0 0 / .125)) calc(25% - 1px), transparent 25%);
+  background-size: 0.5rem 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0.3rem 0.3rem 3rem rgb(0 0 0 / .3);
+  max-width: 80%;
+}
+
+blockquote.q-card::before {
+  --qHeight: 6rem;
+  content: "";
+
+  height: var(--qHeight);
+  width: calc(var(--qHeight) * 1.1);
+  background-image:
+    radial-gradient(circle at bottom right,
+      transparent calc(var(--qHeight) / 4 - 1px),
+      var(--accent-color, black) calc(var(--qHeight) / 4) calc(var(--qHeight) / 2),
+      transparent calc(var(--qHeight) / 2 + 1px)),
+    linear-gradient(var(--accent-color, black), var(--accent-color, black));
+  background-size: calc(var(--qHeight) / 2) calc(var(--qHeight) / 2);
+  background-position: top left, bottom left;
+  background-repeat: space no-repeat
+}
+
+blockquote.q-card>.author {
+  color: var(--text-color-author, white);
+
+  justify-self: end;
+  font-size: 0.75em;
+  padding: 0.5em 1em;
+  border-radius: 0.25rem;
+}
+
+blockquote.q-card>.author::before {
+  content: "- "
+}

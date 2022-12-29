@@ -1,0 +1,531 @@
+.header,
+.testimonials {
+  background-color: var(--bluex);
+  background-image: radial-gradient(circle,
+      var(--bluex),
+      var(--bluex),
+      var(--dblue));
+}
+
+
+.header {
+  padding: 5% 0px 5% 0px;
+}
+
+.txt-link {
+  color: aquamarine;
+}
+
+.txt-link:hover {
+  text-decoration: none;
+  color: var(--dorange);
+}
+
+#portfolio-right-head h1 {
+  font-size: 30px;
+  font-family: blippo, fantasy;
+  color: rgba(38, 38, 38, 1);
+}
+
+#portfolio-right-head h1 span {
+  font-size: 50px;
+  font-family: 'New Rocker', cursive;
+  color: rgba(200, 50, 00, 0.5);
+}
+
+.head-button {
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+/******************************
+ for all devices 
+ *****************************/
+
+.tc {
+  text-align: center;
+}
+
+.shoplink {
+  margin-top: 2%;
+}
+
+.paragraph {
+  color: lightgray;
+  margin-top: -15px;
+  max-width: 70ch;
+  margin: auto;
+}
+
+.social-link-list ul li i {
+  padding: 40%;
+  color: lightgray;
+  font-size: 30px;
+  transition: all .5s;
+
+}
+
+.social-link-list ul li i:hover {
+  margin: 0%;
+  color: #ff5000;
+  font-size: 30px;
+  transform: scale(1.1);
+  transition: all .5s;
+}
+
+/****************************
+style for typewriter 
+*****************************/
+.type-writer {
+  color: #ff5000;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 2px;
+  letter-spacing: 3px;
+}
+
+
+
+
+
+
+.buttonB {
+  border-right: 2px solid aqua;
+  border-left: 2px solid rgba(255, 50, 00, 0.3);
+  border-top: 2px solid rgba(255, 50, 00, 0.2);
+  border-bottom: 2px solid rgba(255, 50, 00, 0.2);
+  box-shadow: .1px .1px 5px .1px #ff5000;
+  border-radius: 50px;
+  background-color: rgba(28, 28, 28, 0.671);
+  font-size: 30px;
+  color: white;
+  transition: all .5s;
+  font-family: 'Times New Roman';
+  padding: 1% 4%;
+}
+
+.buttonB b {
+  color: #ff5000;
+}
+
+.buttonB:hover {
+  background-color: rgb(27, 27, 27);
+  box-shadow: .1px .1px 5px .1px #ff5000;
+  border: 2px solid #ff5000;
+  color: #ff5000;
+}
+
+
+.buttonA {
+  transition: all .5s;
+  font-family: 'Times New Roman';
+  background-color: #101015;
+  font-size: 30px;
+  border: 2px solid #2f263d;
+  border-radius: 50px;
+  color: white;
+  padding: 1% 4%;
+  border-right: 2px solid aqua;
+}
+
+.buttonA b {
+  color: #ff5000;
+}
+
+.buttonA:hover {
+  box-shadow: .1px .1px 5px .1px #ff5000;
+  background-color: rgba(28, 28, 28, 0.671);
+  border: 2px solid #ff5000;
+  color: #ff5000;
+}
+
+
+
+.shoplink a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.shoplink b {
+  font-size: 20px;
+  color: aqua;
+  transition: all .5s;
+}
+
+
+
+.long-arrow-right {
+  display: block;
+  margin: 10px 0px 0px 30px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid gray;
+  border-left: 2px solid gray;
+  transition: all .5s;
+}
+
+.long-arrow-right {
+  transform: rotate(135deg);
+}
+
+.long-arrow-right::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 20px;
+  background-color: gray;
+  transform: rotate(-45deg) translate(6.2px, 0px);
+  left: 0;
+  top: 0;
+}
+
+.shoplink a b:hover {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-decoration: underline;
+  color: var(--dorange);
+  transition: all .5s;
+}
+
+
+
+
+@media screen and (max-width: 1100px) and (min-width: 993px) {
+  #main {
+    padding-top: 20px;
+  }
+
+  .rHead {
+    margin-left: 3%;
+  }
+}
+
+@media screen and (max-width: 993px) and (min-width: 720px) {
+  #main {
+    padding-top: 100px;
+  }
+}
+
+/****************************
+for large screen 
+********************************/
+
+@media screen and (min-width: 1100px) {
+
+  .header {
+    padding-top: 8%;
+    margin-right: 8%;
+  }
+
+  .lHead {
+    margin: 5% 10% 0% 5%;
+
+  }
+
+  .rHead {
+    margin-top: 5%;
+    padding-right: 8%;
+  }
+
+  #portfolio-right-head {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .head-button h3 {
+    padding: 2%;
+  }
+
+  .head-button {
+    margin: auto;
+  }
+
+  #portfolio-right-head h1 span {
+    font-size: 65px;
+  }
+
+  .social-link-list {
+    padding-top: 10px;
+
+  }
+
+}
+
+/********************************
+ for medium screen 
+ *********************************/
+@media screen and (max-width: 1100px) and (min-width: 720px) {
+
+  .head-button {
+    padding-top: 1%;
+    margin-top: 0;
+  }
+
+  .buttonB {
+    font-size: 28px;
+    padding: 1% 3.5%;
+  }
+
+  .buttonA {
+    padding: 1% 3%;
+    font-size: 28px;
+  }
+
+  .header {
+    padding-bottom: 10rem;
+  }
+
+
+  .rHead {
+    padding-top: 8%;
+  }
+
+  .lHead {
+    margin: 5% 3% 0% 0%;
+  }
+
+  #portfolio-right-head {
+    text-align: center;
+  }
+
+  .head-button h3 {
+    padding: 2%;
+  }
+
+  #portfolio-right-head {
+    text-align: center;
+  }
+
+  .social-link-list {
+    padding-top: 10px;
+  }
+
+}
+
+/*****************************
+ for small devices 
+ *****************************/
+@media screen and (max-width: 767px) {
+  .none {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #main {
+    padding-top: 70px;
+  }
+
+  .long-arrow-right {
+    display: none;
+  }
+
+  .head-button {
+    margin: 0;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+  }
+
+  .buttonB {
+    font-size: 20px;
+    padding: 3%;
+    margin-left: 10px;
+    padding: 10px 40px;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .buttonA {
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+
+
+
+  #portfolio-right-head {
+    text-align: center;
+  }
+
+  #portfolio-right-head h1 span {
+    font-size: 40;
+  }
+
+  .head-button h3 {
+    padding: 5%;
+  }
+
+  .lHead {
+    display: none;
+  }
+
+  .paragraph {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+
+  .type-writer {
+    color: #ff5000;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 2px;
+    letter-spacing: 2px;
+  }
+
+  .shoplink b {
+    display: none;
+  }
+
+  .header {
+    padding-bottom: 5rem;
+  }
+
+  .service-card p {
+    font-size: 16px;
+  }
+}
+
+
+.paragraph {
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 4px;
+}
+
+
+/* service section style */
+.services {
+  margin-top: 0px;
+  background: #000010;
+  padding: 0rem 0px 6rem 0px;
+}
+
+.services h1 {
+  color: #ff5000;
+}
+
+.services h6 {
+  font-size: 18px;
+  color: lightgray;
+  max-width: 60ch;
+  margin: auto;
+  padding: 5px;
+}
+
+.service-card {
+  text-align: center;
+  color: lightgray;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.service-card p {
+  font-size: 18px;
+}
+
+.service-card i {
+  font-size: 30px;
+  color: #ff5000;
+}
+
+
+.top-border {
+  border-top: 3px solid #ff5000;
+  width: 10%;
+  padding: 10px;
+  margin-left: 7%;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/************************
+ Slider 
+ ************************/
+.each-slide>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+/* New Haikei style */
+.spacer {
+  aspect-ratio: 960/610;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url('wave-haikei.svg');
+}
+
+/* scroll down icon */
+.box {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box span {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.box span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.box span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}

@@ -1,0 +1,424 @@
+/************************************
+!important style for jivo chat
+**************************************/
+
+/* inner name */
+jdiv.text_ef73 {
+  display: none !important;
+}
+
+/* outter name */
+jdiv .logoIcon_f2b1 {
+  display: none !important;
+}
+
+/* small device icon */
+jdiv .jivoIcon_d62a,
+jdiv.jivoIcon_abc6 {
+  background: url('https://dl.dropbox.com/s/egbhhut0up38wr7/wxa-white.png?dl=0') !important;
+  content: url('https://dl.dropbox.com/s/egbhhut0up38wr7/wxa-white.png?dl=0') !important;
+  width: 52% !important;
+}
+
+/************************************
+navigation bar style
+**************************************/
+.navbar {
+  padding: 5px;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-weight: 500;
+  font-size: 19px;
+  transition: top 0.3s;
+  background-color: rgba(0, 0, 15, .6);
+  color: #fff;
+  top: 0;
+  transition: all 0.3s;
+  backdrop-filter: blur(5px);
+  border-bottom: 2px solid var(--dorange);
+  /* Add the blur effect
+            filter: blur(4px);
+            -webkit-filter: blur(4px); */
+}
+
+#na {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+
+
+
+.navlink a,
+.navlink div button a {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(9, 9, 39), 0 0 5px rgb(3, 3, 56);
+  transition: all 0.3s;
+}
+
+.navlink a:hover {
+  color: var(--dorange);
+  text-decoration: none;
+}
+
+.hirebtn {
+  border: 1px solid #2f263d;
+  color: white;
+}
+
+.hirebtn b {
+  color: var(--dorange);
+  font-size: 20px;
+
+}
+
+
+
+.hirebtn:hover {
+  border: 1px solid var(--dorange);
+  color: var(--dorange);
+  text-decoration: none
+}
+
+.navlink a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  transition: width .3s;
+}
+
+.navlink a:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (max-width: 768px) {}
+
+
+.midnavlink,
+.rinavlink {
+  margin-right: 10px;
+
+}
+
+
+@media screen and (max-width: 950px) and (min-width: 767px) {
+  .wholenav {
+    font-size: 14px;
+  }
+
+  .midnavlink div,
+  .midnavlink a {
+    padding-right: 2px;
+  }
+
+
+  .brand-name {
+    min-width: 25px;
+    max-width: 30px;
+
+
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .brand-name {
+    min-width: 30px;
+    max-width: 30px;
+
+  }
+
+  .wholenav {
+    border-top: 2px solid var(--dorange);
+
+  }
+
+  .navbar {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  div#navbarSupportedContent {
+    padding-bottom: 20px;
+  }
+
+  .navlink {
+    padding-top: 10px;
+  }
+}
+
+.brand-name {
+  min-width: 25px;
+  max-width: 40px;
+  padding: 0%;
+  margin: 0%;
+
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+#icon2 {
+  margin-left: .4px;
+}
+
+#icon1,
+#icon2 {
+  transition-duration: .3s;
+}
+
+
+
+
+
+
+
+
+/************************************ 
+Footer style starts 
+*********************************/
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-section {
+  background: var(--dblue);
+  background-image: linear-gradient(rgba(55, 55, 55, .3), rgba(10, 10, 10, 1));
+  position: relative;
+}
+
+.spacer {
+  aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url('wave-haikei.svg');
+}
+
+.layer2 {
+  background-image: url('starl1.svg');
+}
+
+.layer3 {
+  background-image: url('starl2.svg');
+}
+
+.layerBtm {
+  background-image: url('layerBtm.svg');
+}
+
+
+
+
+.footer-cta {
+  border-bottom: 1px solid var(--grayx);
+}
+
+.single-cta i {
+  color: var(--dorange);
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: var(--gray);
+  font-size: 15px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  max-width: 70ch;
+}
+
+.footer-pattern img {
+  top: 0;
+  height: 300px;
+  background-size: cover;
+}
+
+.footer-logo {
+  place-items: center;
+  display: grid;
+  margin-bottom: 0px;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: var(--gray);
+  line-height: 28px;
+}
+
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.footer-social-icon i {
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.footer-social-icon i:hover {
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  color: var(--dorange);
+}
+
+.facebook-bg {
+  background: var(--bluex);
+}
+
+.twitter-bg {
+  background: var(--bluex);
+}
+
+.google-bg {
+  background: var(--bluex);
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: var(--dorange);
+}
+
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+  color: var(--dorange);
+}
+
+.footer-widget ul li a {
+  color: var(--gray);
+  text-transform: capitalize;
+}
+
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: var(--bluex);
+  border: 1px solid var(--bluex);
+  color: #fff;
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  padding: 16px 20px;
+  border-left: 2px solid var(--dorange);
+  top: 0;
+}
+
+.subscribe-form button i {
+  color: var(--dorange);
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+
+.subscribe-form button:hover i {
+  color: var(--gray);
+}
+
+.copyright-area {
+  background: var(--bluex);
+  padding: 25px 0;
+}
+
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.copyright-text p a {
+  color: var(--dorange);
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: ;
+}
+
+.footer-menu li:hover a {
+  color: var(--dorange);
+}
+
+.footer-menu li a {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.footer-menu ul li {
+  padding-right: 10px;
+  margin-bottom: 10px;
+}

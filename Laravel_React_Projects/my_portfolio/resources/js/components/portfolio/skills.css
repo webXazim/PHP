@@ -1,0 +1,160 @@
+.skill-section {
+    background-color: var(--bluex);
+    /* For browsers that do not support gradients */
+    background-image: radial-gradient(circle,
+            var(--bluex),
+            var(--bluex),
+            var(--dblue));
+
+    padding: 5% 0px 5% 0px;
+    margin-top: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.in-action-btn {
+    width: 14%;
+}
+
+.skill-bar-container {
+    margin: auto;
+
+}
+
+.skill {
+    justify-content: space-between;
+    display: flex;
+}
+
+.full-bar {
+    background-color: #303030;
+    width: 90%;
+}
+
+.skills {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: lightgray;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 5%;
+}
+
+
+.html {
+    width: 95%;
+    background-color: #202020;
+}
+
+.css {
+    width: 85%;
+    background-color: #202020;
+}
+
+
+.js {
+    width: 85%;
+    background-color: #202020;
+}
+
+.react {
+    width: 80%;
+    background-color: #202020;
+}
+
+.angular {
+    width: 70%;
+    background-color: #202020;
+}
+
+.python {
+    width: 85%;
+    background-color: #202020;
+}
+
+
+
+.skill-logo {
+    width: 6%;
+    font-size: 49px;
+    color: lightgray;
+}
+
+
+.in-action-btn button {
+    background-color: rgb(40, 40, 46);
+    margin-left: 9px;
+    padding: 10px;
+    color: darkgray;
+    width: 100%;
+}
+
+.in-action-btn button:hover {
+    background-color: #202020;
+}
+
+.skill-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.skill-header h1 {
+    color: #ff5000;
+}
+
+.skill-header h6 {
+    color: lightgray;
+    font-size: 18px;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 425px) {
+    .skill-logo {
+        display: none;
+    }
+
+    .in-action-btn button {
+        margin-left: 1px;
+        width: 100%;
+    }
+
+    .in-action-btn {
+        width: auto;
+        margin: 0;
+    }
+
+    .full-bar {
+        background-color: #303030;
+        width: 70%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 420px) {
+    .skill-logo {
+        display: none;
+    }
+
+    .in-action-btn button {
+        margin-left: 5px;
+        width: 100%;
+    }
+
+    .in-action-btn {
+        width: auto;
+        margin: auto;
+    }
+
+    .full-bar {
+        background-color: #303030;
+        width: 80%;
+        margin: auto;
+    }
+}
